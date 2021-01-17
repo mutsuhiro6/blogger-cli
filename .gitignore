@@ -1,0 +1,7 @@
+blogger-cli-env/
+client_secret.json
+credentials/*
+!credentials/.gitkeep
+blogId.txt
+__pycache__/
+.vscode/
