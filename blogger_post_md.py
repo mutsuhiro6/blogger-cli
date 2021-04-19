@@ -4,10 +4,11 @@ import os
 import json
 from blogger_service import blogger_service
 from markdown import Markdown
+from googleapiclient import sample_tools
 
 
 def post(blogId, isDraft, body):
-    blogger = blogger_service()
+    blogger, flags = sample_tools.init('', 'blogger', 'v3', __doc__, __file__, scope='https://www.googleapis.com/auth/blogger')
     res = blogger.posts().insert(blogId=blogId, isDraft=isDraft, body=body).execute()
     return res
 
