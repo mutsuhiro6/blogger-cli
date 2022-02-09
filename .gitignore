@@ -4,3 +4,5 @@ blogId.txt
 blogger.dat
 __pycache__/
 .vscode/
+*.json
+*.html
